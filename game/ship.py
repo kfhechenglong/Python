@@ -20,7 +20,6 @@ class Ship():
     # 改变飞船的位置，且不能超出边界
     if self.moving_right and self.rect.right <  self.screen_rect.right:
       self.center += self.ai_settings.ship_speed_factor
-      print(self.center)
     if self.moving_left and self.rect.left > 0:
       self.center -= self.ai_settings.ship_speed_factor
     # 最后更新self.rect对象的值
